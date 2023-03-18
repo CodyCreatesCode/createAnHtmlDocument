@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        section {
+            margin:0px 500px;
+        }
+
+        li {
+            text-align: left;
+        }
+    </style>
+
 </head>
-<body>
-    <table>
-        <thead>Contact Form</thead>
-    </table>
+<body style="background-color: black; color: white;">
+    <img id="img" width="600px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="pokemon logo">
+    <section>
+        <h2>Fun Facts:</h2>
+        <ul>
+            <li>Pokémon means Pocket Monsters</li>
+            <li>Saudi Arabia banned Pokémon at one point.</li>
+            <li>Pikachu directly translates as 'Sparkly mouse noise' </li>
+            <li>Over 30 billion Pokémon cards have been sold</li>
+            <li>Only Mario has sold more video games than Pokémon</li>
+            <li>Gold and Silver were meant to be the last Pokémon games, but people wanted mor</li>
+            <li>The colours of the Pokeballs are actually based on Cambell's soup cans</li>
+            <li>The island of Niue in the South Pacific has put Pikachu on a coin!</li>
+            <li>Ash's Pokémon was originally meant to be a Clefairy, not Pikachu!</li>
+            <li>Many Pokémon are based on traditional Japanese stories and legends</li>
+        </ul>
+    </section>
+
+    <h2><a style="text-decoration:none;" href="https://www.pokemon.com/us"><p>Official Pokemon Website</p></a></h2>
+
+    <footer>
+        <h2><i>"A good friend left me... and I miss her every day. But I know we'll always be friends. Forever." -Ash Ketchum</i></h2>
+    </footer>
+
+
+    <audio id="audio" src="https://vgmsite.com/soundtracks/pokemon-game-boy-pok-mon-sound-complete-set-play-cd/vfywpihuos/1-01.%20Opening.mp3"></audio>
+
+        <script>
+            var audio = document.getElementById("audio");
+            var img = document.getElementById("img");
+            
+            function play() {
+              audio.play();
+            }
+            
+            function stop() {
+              audio.pause();
+            }
+            
+            img.addEventListener('click', play);
+            img.addEventListener('mouseover', play);
+            img.addEventListener('mouseout', stop);
+          </script>
 </body>
 </html>
